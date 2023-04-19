@@ -1,0 +1,22 @@
+1. What is Docker?
+platform for consistently building running and shipping application.
+
+if ur application running on ur machine. it cause some problems
+-one or more files and not included in the part of deployment.then application will not start.
+-software version mismatching (if your apps need go1.20 but your machine having go version 1.18)
+-Differnt configuration setting like env variable is different across the machine.
+
+thats why docker comes into picture.
+
+In docker you can package you apps along with required depencies(db,go).
+Benefits-->
+-lets say one application need go1.16 and another application need go.1.20 the using docker compose we ccan run 2 container side by side.
+
+-lets say we want to delete any application and its dependencies. then there might not be any probabilty of deleteing other files by mistake. we just have to do 
+docker compose down --rmi all
+2.Virtual machine vs container
+container is an isolated environment for running an application. 
+VM -- abstraction of a machine..we can run run several VM on a real physical machine. for example we can run windows and linux in mac using a tool called hypervisor.
+hypervisor is a software to create and manage virtual machines.
+example of hypervisors-Virtual box, vmware, HyperV(windows only)
+
